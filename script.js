@@ -182,7 +182,7 @@ function init() {
 
 	tl.to(cardsContainerEl.children, {
 		delay: 0.15,
-		duration: 0.5,
+		duration: 0,
 		stagger: {
 			ease: "power4.inOut",
 			from: "right",
@@ -253,3 +253,28 @@ const waitForImages = () => {
 };
 
 waitForImages();
+
+document.addEventListener("DOMContentLoaded", () => {
+	const shapeEl = document.querySelector(".shape");
+  
+	if (typeof gsap !== "undefined") {
+	  gsap.fromTo(
+		shapeEl, 
+		{
+		  opacity: 0,
+		  y: 350, 
+		  x: -50, 
+		},
+		{
+		  duration: 5,  
+		  opacity: 1,   
+		  y: 0,        
+		  x: 0,         
+		  ease: "power4.out",
+		}
+	  );
+	} else {
+	  console.error("GSAP não carregado");
+	}
+  });
+  

@@ -49,3 +49,52 @@ function events() {
 }
 
 events();
+
+// Pages Config
+// --------------------------------------------------
+
+function changePage(page) {
+  const pages = ['home-page', 'about-page', 'contact-page', 'investor-page'];
+  const header = document.querySelector('header');
+  const shape = document.querySelector('.shape');
+
+  pages.forEach(p => document.getElementById(p).style.display = 'none');
+
+  document.getElementById(page).style.display = 'flex';
+
+  if (page === 'home-page') {
+    header.style.backgroundColor = 'transparent';
+    header.style.margin = '0';
+    header.style.borderRadius = '0';
+  } else {
+    header.style.backgroundColor = '#fff';
+    header.style.margin = '0 20px';
+    header.style.borderRadius = '20px 20px 0 0';
+  }
+
+  shape.style.display = 'none';
+  
+  setTimeout(() => {
+    shape.style.display = 'flex';
+  },100);
+}
+
+document.getElementById('link-home').addEventListener('click', (event) => {
+  event.preventDefault();
+  changePage('home-page');
+});
+
+document.getElementById('link-investor').addEventListener('click', (event) => {
+  event.preventDefault();
+  changePage('investor-page');
+});
+
+document.getElementById('link-about').addEventListener('click', (event) => {
+  event.preventDefault();
+  changePage('about-page');
+});
+
+document.getElementById('link-contact').addEventListener('click', (event) => {
+  event.preventDefault();
+  changePage('contact-page');
+});

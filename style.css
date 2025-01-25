@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .light {
-  --mainColor:#ED3783;
-  --hoverColor:#ff96a2;
+  --mainColor: #ED3783;
+  --hoverColor: #ff96a2;
   --backgroundColor: #F5F5FA;
   --darkOne: #312f3a;
   --darkTwo: #45424b;
@@ -128,7 +128,7 @@ header .container {
 .fab.fa-instagram {
   font-size: 2rem;
   color: var(--mainColor);
-  transition: 0.3s ease-in-out; 
+  transition: 0.3s ease-in-out;
   cursor: pointer;
 }
 
@@ -274,6 +274,8 @@ header .container {
 }
 
 .shape {
+  animation: slideUp 2s ease forwards;
+  opacity: 0;
   position: absolute;
   z-index: 0;
   width: 500px;
@@ -289,10 +291,23 @@ header .container {
   animation: appear 1s 1 both;
 }
 
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @keyframes appear {
   0% {
     clip-path: circle(30% at -25% -25%);
   }
+
   100% {
     clip-path: circle(150% at 0 0);
   }
@@ -408,4 +423,195 @@ header .container {
   .showcase-area .btn {
     font-size: 0.8rem;
   }
+}
+
+/* Geral */
+/* --------------------------------------- */
+
+.title-nav {
+  font-size: 46px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle-nav {
+  font-size: 15px;
+  margin-bottom: 40px;
+  color: var(--lightTwo);
+}
+
+.description-nav {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: var(--lightTwo);
+  font-weight: 200;
+}
+
+.footer-nav {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+}
+
+.social-links-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.social-icon-nav {
+  margin: 0 10px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer-text-nav {
+  font-size: 12px;
+  color: var(--lightTwo);
+  margin: 5px 0;
+}
+
+.main-content-nav {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.pages-nav {
+  animation: slideUp 0.8s ease-out forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  padding: 20px;
+  margin: 0 20px 20px 20px;
+  border-radius: 0 0 20px 20px;
+  opacity: 0;
+}
+
+.pages-nav[style*="display: none;"] {
+  opacity: 0;
+  animation: none;
+}
+
+/* Home */
+/* --------------------------------------- */
+
+#home-page {
+  animation: slideUp 1s ease-out forwards;
+  opacity: 0;
+}
+
+/* Investor */
+/* --------------------------------------- */
+
+/* About */
+/* --------------------------------------- */
+
+.title-about {
+  font-size: 24px;
+}
+
+.subtitle-about {
+  font-size: 15px;
+  margin-bottom: 40px;
+  color: var(--lightTwo);
+}
+
+.description-about {
+  font-size: 16px;
+  color: var(--lightTwo);
+}
+
+.image-container-about img {
+  width: 400px;
+  height: 400px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.container-about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  margin: 0 100px;
+}
+
+.row-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reverse-about {
+  flex-direction: row-reverse;
+}
+
+.content-about {
+  flex: 1;
+  max-width: 50%;
+}
+
+.image-container-about img {
+  height: auto;
+  border-radius: 8px;
+  width: 400px;
+  height: 400px;
+}
+
+/* Contact */
+/* --------------------------------------- */
+
+.fone-contact {
+  font-size: 16px;
+  color: black;
+  margin-top: 40px;
+}
+
+.email-contact {
+  font-size: 16px;
+  color: black;
+  text-decoration: underline;
+  margin-top: 15px;
+}
+
+/* Quote */
+/* --------------------------------------- */
+
+.quote-block {
+  position: relative;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-left: 4px solid #000000;
+  border-radius: 8px;
+}
+
+.quote-block .icon {
+  font-size: 40px;
+  color: #000000;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.quote-block p {
+  font-size: 18px;
+  color: var(--lightTwo);
+  ;
+  font-style: italic;
+  margin: 20px 0 10px 0;
+  line-height: 1.6;
+}
+
+.quote-block span {
+  display: block;
+  font-size: 16px;
+  color: #555;
+  font-weight: bold;
+  text-align: right;
 }

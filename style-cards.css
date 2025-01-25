@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
+
 :root {
   --card-width: 200px;
   --card-height: 300px;
@@ -17,6 +18,7 @@ button {
   background: none;
   cursor: pointer;
 }
+
 button:focus {
   outline: none;
   border: none;
@@ -30,6 +32,7 @@ button:focus {
   justify-content: center;
   align-items: center;
 }
+
 .app__bg {
   position: absolute;
   width: 100%;
@@ -40,6 +43,7 @@ button:focus {
   user-select: none;
   overflow: hidden;
 }
+
 .app__bg::before {
   content: "";
   position: absolute;
@@ -52,6 +56,7 @@ button:focus {
   opacity: 0;
   /* opacity: 0.8; */
 }
+
 .app__bg__image {
   position: absolute;
   left: 50%;
@@ -62,21 +67,27 @@ button:focus {
   transition: transform 1000ms ease, opacity 1000ms ease;
   overflow: hidden;
 }
+
 .app__bg__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .app__bg__image.current--image {
   opacity: 1;
   --image-translate-offset: 0;
 }
-.app__bg__image.previous--image, .app__bg__image.next--image {
+
+.app__bg__image.previous--image,
+.app__bg__image.next--image {
   opacity: 0;
 }
+
 .app__bg__image.previous--image {
   --image-translate-offset: -25%;
 }
+
 .app__bg__image.next--image {
   --image-translate-offset: 25%;
 }
@@ -86,6 +97,7 @@ button:focus {
   width: calc(3 * var(--card-width));
   height: auto;
 }
+
 .cardList__btn {
   --btn-size: 35px;
   width: var(--btn-size);
@@ -95,34 +107,37 @@ button:focus {
   transform: translateY(-50%);
   z-index: 100;
   color: black;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 .cardList__btn:hover {
-  transform: translateY(-50%) scale(1.2); 
+  transform: translateY(-50%) scale(1.2);
 }
 
 .cardList__btn.btn--left {
   left: 10%;
 }
+
 .cardList__btn.btn--right {
   right: 10%;
 }
+
 .cardList__btn .icon {
   display: flex;
   justify-content: center;
-  align-items: center; 
-  width: 100%; 
-  height: 100%; 
-  padding: 0.9rem 1.9rem; 
-  background-color: #ED3783; 
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0.9rem 1.9rem;
+  background-color: #ED3783;
   border-radius: 16px;
 }
 
 .cardList__btn .icon i {
-  font-size: 20px; 
+  font-size: 20px;
   color: white;
 }
+
 .cardList .cards__wrapper {
   position: relative;
   width: 100%;
@@ -141,8 +156,8 @@ button:focus {
   height: 200px;
   transition: transform var(--card-transition-duration) var(--card-transition-easing), box-shadow 300ms ease;
   user-select: none;
-  border-radius: 20px; 
-  overflow: hidden; 
+  border-radius: 20px;
+  overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -157,6 +172,7 @@ button:focus {
   height: 100%;
   overflow: hidden;
 }
+
 .card__image img {
   position: absolute;
   left: 0;
@@ -185,7 +201,8 @@ button:focus {
   --card-rotation-offset: -25deg;
 }
 
-.card.previous--card, .card.next--card {
+.card.previous--card,
+.card.next--card {
   --card-scale-offset: 0.9;
   --opacity: 0.4;
 }
@@ -196,6 +213,7 @@ button:focus {
   /* height: var(--card-height); */
   pointer-events: none;
 }
+
 .infoList .info__wrapper {
   position: relative;
   width: 100%;
@@ -216,6 +234,7 @@ button:focus {
   transform: translateZ(2rem);
   transition: transform var(--card-transition-duration) var(--card-transition-easing);
 }
+
 .info .text {
   position: relative;
   font-family: "Montserrat";
@@ -224,10 +243,12 @@ button:focus {
   color: #ED3783;
   width: fit-content;
 }
+
 .info .name,
- .info .location {
+.info .location {
   text-transform: uppercase;
 }
+
 /*
 .info .location {
   font-weight: 800;
@@ -261,15 +282,19 @@ button:focus {
 .info div {
   margin: 70% 0;
 }
+
 .info .description {
   --text-size-offset: 0.065;
   font-weight: 500;
 }
+
 .info.current--info {
   opacity: 1;
   display: block;
 }
-.info.previous--info, .info.next--info {
+
+.info.previous--info,
+.info.next--info {
   opacity: 0;
   display: none;
 }
@@ -287,22 +312,26 @@ button:focus {
   background: #000;
   z-index: 200;
 }
+
 .loading__wrapper .loader--text {
   color: #fff;
   font-family: "Montserrat";
   font-weight: 500;
   margin-bottom: 1.4rem;
 }
+
 .loading__wrapper .loader {
   position: relative;
   width: 200px;
   height: 2px;
   background: rgba(255, 255, 255, 0.25);
 }
+
 .loading__wrapper .loader--text p {
   text-align: center;
-  margin-top: 150px ;
+  margin-top: 150px;
 }
+
 .loading__wrapper .loader span {
   position: absolute;
   left: 0;
@@ -320,6 +349,7 @@ button:focus {
     --card-height: 400px;
   }
 }
+
 .support {
   position: absolute;
   right: 10px;
@@ -327,6 +357,7 @@ button:focus {
   padding: 10px;
   display: flex;
 }
+
 .support a {
   margin: 0 10px;
   color: #fff;
@@ -334,7 +365,7 @@ button:focus {
   backface-visibility: hidden;
   transition: all 150ms ease;
 }
+
 .support a:hover {
   transform: scale(1.1);
 }
-
