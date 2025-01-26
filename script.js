@@ -11,6 +11,8 @@ const appBgContainerEl = document.querySelector(".app__bg");
 
 const cardInfosContainerEl = document.querySelector(".info__wrapper");
 
+const shapeEl = document.querySelector(".shape");
+
 buttons.next.addEventListener("click", () => swapCards("right"));
 
 buttons.prev.addEventListener("click", () => swapCards("left"));
@@ -254,27 +256,37 @@ const waitForImages = () => {
 
 waitForImages();
 
-document.addEventListener("DOMContentLoaded", () => {
-	const shapeEl = document.querySelector(".shape");
-  
-	if (typeof gsap !== "undefined") {
-	  gsap.fromTo(
-		shapeEl, 
-		{
-		  opacity: 0,
-		  y: 350, 
-		  x: -50, 
-		},
-		{
-		  duration: 5,  
-		  opacity: 1,   
-		  y: 0,        
-		  x: 0,         
-		  ease: "power4.out",
-		}
-	  );
-	} else {
-	  console.error("GSAP não carregado");
-	}
-  });
+// function initShape() {
+
+// 	let tl = gsap.timeline();
+
+// 	tl.to(shapeEl, {
+// 		delay: 0.15,
+// 		duration: 1.5,
+// 		ease: "power4.inOut",
+// 		from: "right",
+// 		amount: 0.1,
+// 		"--card-translateY-offset": "0%",
+//         opacity: 1,
+// 	});
+// }
+
+// const waitForImageShape = () => {
+// 	gsap.set(cardsContainerEl.children, {
+// 		"--card-translateY-offset": "100vh",
+// 	});
+
+// 	imagesLoaded(shapeEl, (instance) => {
+// 		if (instance.isComplete) {
+// 		gsap.timeline()
+// 			.to(".loading__wrapper", {
+// 			duration: 0.8,
+// 			opacity: 0,
+// 			pointerEvents: "none",
+// 		}).call(() => initShape());
+// 		}
+// 	});
+// };
+
+// waitForImageShape();
   
