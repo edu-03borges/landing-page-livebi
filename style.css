@@ -410,6 +410,13 @@ header .container {
   margin-bottom: 20px; 
 }
 
+.image-container-investor {
+  margin: 70px 0;
+}
+
+.image-separator-investor {
+  margin-bottom: 20px;
+}
 /* About */
 /* --------------------------------------- */
 
