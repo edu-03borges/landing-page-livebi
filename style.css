@@ -166,7 +166,7 @@ header .container {
 
 .hamburger-menu .bar {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 3px;
   background-color: var(--darkTwo);
   border-radius: 3px;
@@ -197,19 +197,21 @@ header .container {
 }
 
 .big-wrapper.active .bar::before {
+  background-color: white;
   transform: translateY(0) rotate(-45deg);
 }
 
 .big-wrapper.active .bar::after {
+  background-color: white;
   transform: translateY(0) rotate(45deg);
 }
 
-.showcase-area .container {
+/* .showcase-area .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
-}
+} */
 
 .big-title {
   font-size: 1.4rem;
@@ -226,9 +228,9 @@ header .container {
   line-height: 2.3;
 }
 
-.showcase-area .btn {
+/* .showcase-area .btn {
   box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.05);
-}
+} */
 
 .person {
   width: 123%;
@@ -417,6 +419,7 @@ header .container {
 .image-separator-investor {
   margin-bottom: 20px;
 }
+
 /* About */
 /* --------------------------------------- */
 
@@ -559,7 +562,7 @@ header .container {
     top: 0;
     right: 0;
     max-width: 450px;
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     background-color: var(--mainColor);
     z-index: 95;
@@ -584,7 +587,7 @@ header .container {
     background: none;
   }
 
-  .overlay {
+  /* .overlay {
     display: block;
     position: fixed;
     top: 0;
@@ -595,7 +598,7 @@ header .container {
     opacity: 0;
     pointer-events: none;
     transition: 0.5s;
-  }
+  } */
 
   .big-wrapper.active .links {
     transform: translateX(0);
@@ -607,7 +610,7 @@ header .container {
     opacity: 1;
   }
 
-  .showcase-area {
+  /* .showcase-area {
     padding: 2.5rem 0;
     max-width: 700px;
     margin: 0 auto;
@@ -617,7 +620,7 @@ header .container {
     grid-template-columns: 1fr;
     justify-content: center;
     grid-gap: 2rem;
-  }
+  } */
 
   .big-title {
     font-size: 1.1rem;
@@ -640,6 +643,142 @@ header .container {
   .shape {
     bottom: -400px;
     left: -200px;
+  }
+  
+  /* Geral */
+  /* --------------------------------------- */
+
+  .title-nav {
+    font-size: 32px;
+  }
+
+  .subtitle-nav {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .description-nav {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .main-content-nav {
+    margin: 30px auto;
+  }
+
+  .social-links-nav {
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+
+  .social-icon-nav {
+    margin: 5px 10px;
+  }
+
+  .footer-text-nav {
+    font-size: 10px;
+  }
+
+  /* Contact */
+  /* --------------------------------------- */
+
+  .fone-contact, .email-contact {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  /* About */
+  /* --------------------------------------- */
+
+  .container-about {
+    margin: 0 20px;
+  }
+
+  .row-about {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .reverse-about {
+    flex-direction: column;
+  }
+
+  .content-about {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .image-container-about img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .title-about {
+    font-size: 20px;
+  }
+
+  .subtitle-about {
+    font-size: 14px;
+  }
+
+  .description-about {
+    font-size: 14px;
+  }
+
+  /* Quote */
+  /* --------------------------------------- */
+
+  .quote-block {
+    padding: 15px;
+    margin: 20px auto;
+    font-size: 14px;
+  }
+
+  .quote-block .icon {
+    font-size: 30px;
+  }
+
+  .quote-block p {
+    font-size: 14px;
+  }
+
+  .quote-block span {
+    font-size: 12px;
+  }
+
+  /* Investor */
+  /* --------------------------------------- */
+
+  .container-investor {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .title-investor {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .subtitle-investor {
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .description-investor {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+
+  .image-separator-investor img,
+  .image-container-investor img {
+    max-width: 100%;
+    margin: 15px 0;
   }
 }
 
