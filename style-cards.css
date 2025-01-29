@@ -121,14 +121,11 @@ button:focus {
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 0.9rem 1.9rem;
-  background-color: #ED3783;
-  border-radius: 16px;
 }
 
 .cardList__btn .icon i {
-  font-size: 20px;
-  color: white;
+  font-size: 25px;
+  color: #ED3783;
 }
 
 .cardList .cards__wrapper {
@@ -202,7 +199,7 @@ button:focus {
 
 .infoList {
   position: absolute;
-  width: calc(3 * var(--card-width));
+  width: calc(3.5 * var(--card-width));
   /* height: var(--card-height); */
   pointer-events: none;
 }
@@ -358,7 +355,7 @@ button:focus {
 
 @media only screen and (max-width: 510px) {
   :root {
-    --card-width: calc(100vw / 2.5); 
+    --card-width: calc(100vw / 2); 
     --card-height: var(--card-width);
   }
 
@@ -367,11 +364,45 @@ button:focus {
     height: var(--card-height);
   }
 
-  .info {
-    margin-bottom: calc(var(--card-height) / 3);
+  .cardList__btn {
+    margin: 0 145px;
   }
 
-  .cardList__btn {
-    margin: 0 125px;
+  .infoList {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
   }
+  
+  .info__wrapper {
+    text-align: center; 
+  }
+  
+  .info {
+    margin: 0 auto; 
+    text-align: center;
+  }
+  
+  .info div {
+    margin: 50% 0;
+  }
+  
+  .info .name {
+    font-size: 35px;
+    display: inline-block;
+    text-align: center; 
+    margin-bottom: 40%;
+  }
+  
+  
+  .info .description {
+    font-size: 15px;
+    display: inline-block;
+    max-width: 300px;
+    word-wrap: break-word;
+    white-space: normal;
+    text-align: center; /* Centraliza o texto */
+  }
+  
 }
