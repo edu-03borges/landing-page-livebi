@@ -442,22 +442,20 @@ header .container {
 .container-contact {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 20px;
   margin: 0 100px;
 }
 
 .fone-contact {
   font-size: 16px;
   color: black;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .email-contact {
   font-size: 16px;
   color: black;
   text-decoration: underline;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 /* Quote */
@@ -657,7 +655,7 @@ header .container {
 
   .fone-contact, .email-contact {
     font-size: 14px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   /* About */
