@@ -42,9 +42,9 @@ a {
   min-height: 100vh;
   overflow: hidden;
   background-color: var(--backgroundColor);
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 
 .container {
@@ -340,27 +340,36 @@ header .container {
 .container-investor {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   padding: 20px;
   width: 70%;
   margin: 50px auto;
+}
+
+.content-investor {
+  flex: 1;
+  width: 100%;
 }
 
 .title-investor {
   font-size: 24px;
   font-weight: bold;
   margin: 10px 0; 
+  width: 100%; 
 }
 
 .subtitle-investor {
   font-size: 16px; 
   margin-bottom: 20px;
   color: var(--lightTwo);
+  width: 100%;
 }
 
 .description-investor {
   font-size: 16px; 
   line-height: 1.5;
   color: var(--lightTwo);
+  width: 100%; 
   margin-bottom: 20px; 
 }
 
@@ -429,6 +438,14 @@ header .container {
 
 /* Contact */
 /* --------------------------------------- */
+
+.container-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  margin: 0 100px;
+}
 
 .fone-contact {
   font-size: 16px;
@@ -634,6 +651,10 @@ header .container {
   /* Contact */
   /* --------------------------------------- */
 
+  .container-contact {
+    margin: 0 20px;
+  }
+
   .fone-contact, .email-contact {
     font-size: 14px;
     margin-top: 20px;
@@ -704,24 +725,27 @@ header .container {
   /* --------------------------------------- */
 
   .container-investor {
-    width: 100%;
-    margin: 0;
+    width: 90%;
+    padding: 10px;
   }
 
   .title-investor {
     font-size: 20px;
     margin-bottom: 15px;
+    text-align: center;
   }
 
   .subtitle-investor {
     font-size: 14px;
     margin-bottom: 15px;
+    text-align: center;
   }
 
   .description-investor {
     font-size: 12px;
     line-height: 1.4;
     margin-bottom: 15px;
+    text-align: justify;
   }
 
   .image-separator-investor img,
