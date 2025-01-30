@@ -373,7 +373,7 @@ button:focus {
     max-width: 300px;
     word-wrap: break-word;
     white-space: normal;
-    text-align: center;
+    text-align: start;
   }
 }
 
@@ -389,7 +389,7 @@ button:focus {
     max-width: 300px;
     word-wrap: break-word;
     white-space: normal;
-    text-align: center;
+    text-align: start;
     margin-bottom: 70px;
   }
 }
