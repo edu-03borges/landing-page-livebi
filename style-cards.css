@@ -234,48 +234,20 @@ button:focus {
   width: fit-content;
 }
 
-.info .name,
-.info .location {
+.info .name {
   text-transform: uppercase;
+  margin-top: 60px
 }
-
-/*
-.info .location {
-  font-weight: 800;
-}
-.info .location {
-  --mg-left: 40px;
-  --text-size-offset: 0.12;
-  font-weight: 600;
-  margin-left: var(--mg-left);
-  margin-bottom: calc(var(--mg-left) / 2);
-  padding-bottom: 0.8rem;
-}
-.info .location::before, .info .location::after {
-  content: "";
-  position: absolute;
-  background: #fff;
-  left: 0%;
-  transform: translate(calc(-1 * var(--mg-left)), -50%);
-}
-.info .location::before {
-  top: 50%;
-  width: 20px;
-  height: 5px;
-}
-.info .location::after {
-  bottom: 0;
-  width: 60px;
-  height: 2px;
-} */
 
 .info div {
-  margin: 80% 0;
+  margin: 45% 0;
 }
 
 .info .description {
   --text-size-offset: 0.065;
   font-weight: 500;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 .info.current--info {
@@ -395,14 +367,29 @@ button:focus {
     margin-bottom: 40%;
   }
   
-  
   .info .description {
     font-size: 15px;
     display: inline-block;
     max-width: 300px;
     word-wrap: break-word;
     white-space: normal;
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
   }
-  
+}
+
+@media only screen and (max-height: 790px) {
+
+  .info div {
+    margin: 35% 0;
+  }
+
+  .info .description {
+    font-size: 12px;
+    display: inline-block;
+    max-width: 300px;
+    word-wrap: break-word;
+    white-space: normal;
+    text-align: center;
+    margin-bottom: 70px;
+  }
 }
