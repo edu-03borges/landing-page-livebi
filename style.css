@@ -248,6 +248,39 @@ header .container {
   left: -50px;
 }
 
+.whatsapp-button {
+  --card-translateY-offset: 100vh;
+  transform: translate(-50%, -50%) translateX(var(--card-translateX-offset)) translateY(var(--card-translateY-offset)) rotateY(var(--card-rotation-offset)) scale(var(--card-scale-offset));
+  animation: slideUp 3s ease forwards;
+  opacity: 0;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 30px;
+}
+
+.whatsapp-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #07AE8C;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 40%;
+}
+
+.whatsapp-button:hover a {
+  background-color: #06775F;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
 .copy {
   position: absolute;
   top: 0;
@@ -612,6 +645,9 @@ header .container {
     left: -200px;
   }
   
+  .whatsapp-button a {
+    width: 80%;
+  }
   /* Geral */
   /* --------------------------------------- */
 
