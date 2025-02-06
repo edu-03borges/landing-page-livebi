@@ -273,7 +273,7 @@ header .container {
   border-radius: 8px;
   transition: 0.3s;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 40%;
+  width: 20%;
 }
 
 .whatsapp-button:hover a {
