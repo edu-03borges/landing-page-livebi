@@ -53,7 +53,7 @@ events();
 // --------------------------------------------------
 
 function changePage(page) {
-  const pages = ['home-page', 'about-page', 'contact-page', 'investor-page'];
+  const pages = ['home-page', 'about-page', 'contact-page'/*, 'investor-page' */];
   const header = document.querySelector('header');
   const shape = document.querySelector('.shape');
 
@@ -83,10 +83,10 @@ document.getElementById('link-home').addEventListener('click', (event) => {
   changePage('home-page');
 });
 
-document.getElementById('link-investor').addEventListener('click', (event) => {
-  event.preventDefault();
-  changePage('investor-page');
-});
+// document.getElementById('link-investor').addEventListener('click', (event) => {
+//   event.preventDefault();
+//   changePage('investor-page');
+// });
 
 document.getElementById('link-about').addEventListener('click', (event) => {
   event.preventDefault();
