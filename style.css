@@ -420,53 +420,6 @@ header .container {
   margin-bottom: 20px;
 }
 
-/* Investor */
-/* --------------------------------------- */
-
-.container-investor {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
-  width: 70%;
-  margin: 50px auto;
-}
-
-.content-investor {
-  flex: 1;
-  width: 100%;
-}
-
-.title-investor {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 10px 0; 
-  width: 100%; 
-}
-
-.subtitle-investor {
-  font-size: 16px; 
-  margin-bottom: 20px;
-  color: var(--lightTwo);
-  width: 100%;
-}
-
-.description-investor {
-  font-size: 16px; 
-  line-height: 1.5;
-  color: var(--lightTwo);
-  width: 100%; 
-  margin-bottom: 20px; 
-}
-
-.image-container-investor {
-  margin: 70px 0;
-}
-
-.image-separator-investor {
-  margin-bottom: 20px;
-}
-
 /* About */
 /* --------------------------------------- */
 
@@ -846,39 +799,6 @@ header .container {
 
   .quote-block span {
     font-size: 12px;
-  }
-
-  /* Investor */
-  /* --------------------------------------- */
-
-  .container-investor {
-    width: 90%;
-    padding: 10px;
-  }
-
-  .title-investor {
-    font-size: 20px;
-    margin-bottom: 15px;
-    text-align: center;
-  }
-
-  .subtitle-investor {
-    font-size: 14px;
-    margin-bottom: 15px;
-    text-align: center;
-  }
-
-  .description-investor {
-    font-size: 12px;
-    line-height: 1.4;
-    margin-bottom: 15px;
-    text-align: justify;
-  }
-
-  .image-separator-investor img,
-  .image-container-investor img {
-    max-width: 100%;
-    margin: 15px 0;
   }
 }
 
