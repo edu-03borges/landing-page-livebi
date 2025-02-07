@@ -53,7 +53,7 @@ events();
 // --------------------------------------------------
 
 function changePage(page) {
-  const pages = ['home-page', 'about-page', 'contact-page'/*, 'investor-page' */];
+  const pages = ['home-page', 'about-page', 'contact-page', 'product-page'/*, 'investor-page' */];
   const header = document.querySelector('header');
   const shape = document.querySelector('.shape');
   const whatsappButton = document.querySelector('.whatsapp-button');
@@ -84,6 +84,11 @@ function changePage(page) {
 document.getElementById('link-home').addEventListener('click', (event) => {
   event.preventDefault();
   changePage('home-page');
+});
+
+document.getElementById('link-product').addEventListener('click', (event) => {
+  event.preventDefault();
+  changePage('product-page');
 });
 
 // document.getElementById('link-investor').addEventListener('click', (event) => {
