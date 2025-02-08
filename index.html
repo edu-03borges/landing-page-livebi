@@ -441,6 +441,18 @@
     </div>
   </main>
 
+  <!-- JavaScript Vanilla -->
+
+  <script>
+    document.querySelector('.whatsapp-button a').addEventListener('click', function() {
+      gtag('event', 'click', {
+        'event_category': 'Botão WhatsApp',
+        'event_label': 'Entrar no Grupo',
+        'value': 1
+      });
+    });
+  </script>
+  
   <!-- JavaScript Files -->
 
   <script src="https://kit.fontawesome.com/a81368914c.js"></script>
