@@ -646,6 +646,11 @@ header .container {
     bottom: -400px;
     left: -200px;
   }
+
+  .whatsapp-button {
+    position: relative;
+    top: -50px
+  }
   
   .whatsapp-button a {
     width: 80%;
